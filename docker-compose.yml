@@ -1,0 +1,14 @@
+version: "2.17"
+
+services:
+  proyecto-backend-iud:
+    container_name: proyect-backend-iud
+    image: proyect-backend-iud:v1
+    build:
+      context: .
+    ports:
+      - "4001:4001"
+    networks:
+      - proyectos-app-iud
+networks:
+  proyectos-app-iud:
